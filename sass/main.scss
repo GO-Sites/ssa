@@ -1,0 +1,17 @@
+@import '_variables';
+
+@import '_header';
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $default-rg;
+}
+
+.container-ps {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}

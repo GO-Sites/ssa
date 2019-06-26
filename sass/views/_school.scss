@@ -1,0 +1,100 @@
+.school {
+    padding: 32px 0;
+
+    &-slider {
+        width: 100%;
+        height: 320px;
+        &-item {
+            width: 100%;
+            height: 320px;
+            background-color: $yellow;
+            padding: 16px;
+            color: #fff;
+            font-size: 32px;
+            &:nth-child(3) {
+                background-color: $red;
+            }
+            &:nth-child(4) {
+                background-color: $dark-grey;
+            }
+            &:nth-child(5) {
+                background-color: $grey;
+            }
+        }
+    }
+
+    h5 {
+        color: $dark-grey;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &-areas {
+        padding: 0;
+        list-style: none;
+        &-link {
+            color: $dark-grey;
+            position: relative;
+            transition: all .2s ease;
+            &-item {
+                padding: 4px 16px;
+                text-transform: uppercase;
+                font-family: $default-lt;
+                font-size: 18px;
+                margin: 4px 0;
+                width: 100%;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 2px;
+                    height: 100%;
+                    background-color: $red;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    z-index: -1;
+                }
+                &:hover {
+                    color: #fff;
+                    &::before {
+                        width: 100%;
+                    }  
+                }
+            }
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    // .slick-dots li button:before {
+    //     transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    // }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: $red;
+        border: 1px solid $red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        animation-name: expand;
+        animation-duration: .2s;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

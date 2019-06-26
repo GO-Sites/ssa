@@ -1,0 +1,83 @@
+.news {
+    padding: 32px 0;
+    .card {
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 0 16px rgba($color: #000000, $alpha: 0.2);
+        position: relative;
+        border-bottom: 2px solid $yellow;
+        &-img-top, &-img {
+            border-radius: 0;
+        }
+        &-img {
+            background-image: url('../assets/img/sample.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+        &-body {
+            position: relative;
+        }
+        .read-more {
+            background-color: $red;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 50%;
+            position: absolute;
+            transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+            top: -25px;
+            right: 32px;
+            &:hover {
+                text-decoration: none;
+                transform: scale(1.05);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: 0.1);
+            }
+        }
+        .meta {
+            text-transform: uppercase;
+            color: #bbb;
+        }
+        &-title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 1.2;
+            text-align: justify;
+        }
+    }
+
+    .card-horizontal {
+        border-bottom: none;
+        border-right: 2px solid $yellow;
+        .read-more {
+            left: -20px;
+            top: 75%;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .btn-ssa {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $red;
+        width: 256px;
+        padding: 8px 16px;
+        text-align: center;
+        margin: 32px auto 0;
+        transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover {
+            text-decoration: none;
+            background-color: $yellow;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+        }
+    }
+}

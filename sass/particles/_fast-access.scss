@@ -1,0 +1,64 @@
+.fast-access {
+    padding: 32px 0;
+    &-link {
+        background-color: $red;
+        height: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &1 {
+            &:hover {
+                transform: translate(-5px, -5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+        &2 {
+            &:hover {
+                transform: translate(0, -5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+        &3 {
+            &:hover {
+                transform: translate(5px, -5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+        &4 {
+            &:hover {
+                transform: translate(-5px, 5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+        &5 {
+            &:hover {
+                transform: translate(0, 5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+        &6 {
+            &:hover {
+                transform: translate(5px, 5px);
+                box-shadow: 0 0 16px rgba($color: #000000, $alpha: .4)
+            }
+        }
+    }
+    &-link1, &-link3, &-link5 {
+        background-color: $wine;
+    }
+    &-anchor {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-icon {
+        display: block;
+        margin: 0 auto;
+    }
+    &-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $default-lt;
+    }
+}

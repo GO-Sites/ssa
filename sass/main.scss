@@ -8,6 +8,7 @@ body, html {
 
 body {
     font-family: $default-rg;
+    $color: $grey;
 }
 
 .container-ps {
@@ -15,3 +16,33 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.title {
+    text-transform: uppercase;
+    color: $grey;
+    font-family: $default-lt;
+    position: relative;
+    margin-bottom: 16px;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+//Views, particles and pages
+@import 'views/home';
+@import 'particles/full-banner';
+@import 'particles/fast-access';
+
+@import 'views/school';
+
+@import 'views/news';
+
+@import 'views/duplicated';
+
+@import 'views/testimonials';

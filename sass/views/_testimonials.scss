@@ -1,0 +1,99 @@
+.testimonials {
+    padding: 64px 0;
+    background-color: $yellow;
+    .text {
+        position: relative;
+        &::before {
+            content: " ";
+            width: 128px;
+            height: 128px;
+            background-image: url('../assets/icons/left-quote.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        &::after {
+            content: " ";
+            width: 128px;
+            height: 128px;
+            background-image: url('../assets/icons/right-quote.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        p {
+            z-index: 10;
+            position: relative;
+            width: 64%;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            color: $dark-grey;
+        }
+    }
+    .author {
+        margin-top: 32px;
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name, .job {
+                text-transform: uppercase;
+                margin: 0;
+                color: $dark-grey;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .job {
+                font-family: $default-lt;
+            }
+        }
+    }
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-slide {
+        height: 320px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: $dark-grey;
+        border: 1px solid $dark-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        animation-name: expand;
+        animation-duration: .2s;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

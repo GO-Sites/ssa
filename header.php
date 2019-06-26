@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="top-contact">
-        <div class="container-ps">
+        <div class="container">
             <div class="contacts">
                 <ul class="social-media">
                     <li class="social-item">
@@ -19,15 +19,22 @@
                         <a href="#0"><i class="fab fa-youtube"></i></a>
                     </li>
                 </ul>
-                <span class="phone">
-                    <a href="tel:558532066191" class="link"><i class="fas fa-phone"></i> <small>(85)</small> 3206-6191</a>
-                </span>
+
+                <ul class="social-media">
+                    <li class="phone">
+                        <a href="tel:558532066191" class="link"><i class="fas fa-phone"></i> <small>(85)</small> 3206-6191</a>
+                    </li>
+                    <li class="phone">
+                        <a href="https://api.whatsapp.com/send?phone=5585988915533" class="link"><i class="fab fa-whatsapp"></i> <small>(85)</small> 98891-5533</a>
+                    </li>
+                </ul>
+                
             </div>
         </div>
     </div>
 
     <div class="brand-area">
-        <div class="container-ps">
+        <div class="container">
             <div class="bar">
                 <a href="" class="brand-img">
                     <img src="assets/img/ssa-logo.svg" alt="" class="img-fluid">
@@ -51,7 +58,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-ps">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

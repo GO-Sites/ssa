@@ -34,6 +34,9 @@
   text-decoration: none;
   transform: scale(1.05);
 }
+.top-contact .contacts .phone:not(:last-child) {
+  margin-right: 12px;
+}
 .top-contact .contacts .phone .link {
   color: #fff;
   transition: all 0.1s ease;
@@ -132,7 +135,7 @@
   color: #fff !important;
   text-transform: uppercase;
   position: relative;
-  padding: 20px 16px;
+  padding: 20px 26px;
   background-color: #CA151C;
   transition: all 0.1s ease;
 }
@@ -156,6 +159,471 @@ body {
   width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #424143;
+  font-family: "Proxima Nova Lt";
+  position: relative;
+  margin-bottom: 16px;
+}
+.title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #CA151C;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.full-banner {
+  width: 100%;
+  height: 512px;
+  background-color: #00B0B8;
+  background-image: url("../assets/img/SSA_ProspectarMelhorWhatsapp-FullBanner.png");
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fast-access {
+  padding: 32px 0;
+}
+.fast-access-link {
+  background-color: #CA151C;
+  height: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fast-access-link1:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link2:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link3:hover {
+  transform: translate(5px, -5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link4:hover {
+  transform: translate(-5px, 5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link5:hover {
+  transform: translate(0, 5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link6:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+.fast-access-link1, .fast-access-link3, .fast-access-link5 {
+  background-color: #860D11;
+}
+.fast-access-anchor:hover {
+  text-decoration: none;
+}
+.fast-access-icon {
+  display: block;
+  margin: 0 auto;
+}
+.fast-access-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Lt";
+}
+
+.school {
+  padding: 32px 0;
+}
+.school-slider {
+  width: 100%;
+  height: 320px;
+}
+.school-slider-item {
+  width: 100%;
+  height: 320px;
+  background-color: #F7931D;
+  padding: 16px;
+  color: #fff;
+  font-size: 32px;
+}
+.school-slider-item:nth-child(3) {
+  background-color: #CA151C;
+}
+.school-slider-item:nth-child(4) {
+  background-color: #1e1e1e;
+}
+.school-slider-item:nth-child(5) {
+  background-color: #424143;
+}
+.school h5 {
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.school-areas {
+  padding: 0;
+  list-style: none;
+}
+.school-areas-link {
+  color: #1e1e1e;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.school-areas-link-item {
+  padding: 4px 16px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Lt";
+  font-size: 18px;
+  margin: 4px 0;
+  width: 100%;
+  position: relative;
+}
+.school-areas-link-item::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #CA151C;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+.school-areas-link-item:hover {
+  color: #fff;
+}
+.school-areas-link-item:hover::before {
+  width: 100%;
+}
+.school-areas-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.school .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #CA151C;
+  border: 1px solid #CA151C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation-name: expand;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.news {
+  padding: 32px 0;
+}
+.news .card {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-bottom: 2px solid #F7931D;
+}
+.news .card-img-top, .news .card-img {
+  border-radius: 0;
+}
+.news .card-img {
+  background-image: url("../assets/img/sample.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.news .card-body {
+  position: relative;
+}
+.news .card .read-more {
+  background-color: #CA151C;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  top: -25px;
+  right: 32px;
+}
+.news .card .read-more:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.news .card .meta {
+  text-transform: uppercase;
+  color: #bbb;
+}
+.news .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.news .card-text {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify;
+}
+.news .card-horizontal {
+  border-bottom: none;
+  border-right: 2px solid #F7931D;
+}
+.news .card-horizontal .read-more {
+  left: -20px;
+  top: 75%;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+}
+.news .btn-ssa {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #CA151C;
+  width: 256px;
+  padding: 8px 16px;
+  text-align: center;
+  margin: 32px auto 0;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.news .btn-ssa:hover {
+  text-decoration: none;
+  background-color: #F7931D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.duplicated {
+  padding: 32px 0;
+}
+.duplicated .autonews .head {
+  position: relative;
+}
+.duplicated .autonews .head .read-more {
+  background-color: #CA151C;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.duplicated .autonews .head .read-more:hover {
+  text-decoration: none;
+  background-color: #F7931D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.duplicated .autonews .edition, .duplicated .autonews .edition-number {
+  text-transform: uppercase;
+  color: #CA151C;
+  font-family: "Proxima Nova Lt";
+  margin: 0;
+}
+.duplicated .autonews .edition-number {
+  font-family: "Proxima Nova Bl";
+}
+.duplicated .autonews .description {
+  font-family: "Proxima Nova Lt";
+  font-size: 20px;
+}
+.duplicated .book .head {
+  position: relative;
+}
+.duplicated .book .head .read-more {
+  background-color: #CA151C;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.duplicated .book .head .read-more:hover {
+  text-decoration: none;
+  background-color: #F7931D;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.duplicated .book .event-row {
+  position: relative;
+  height: 80px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+.duplicated .book .event-row:not(:last-child) {
+  margin-bottom: 8px;
+}
+.duplicated .book .event-row .date {
+  background-color: #CA151C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.duplicated .book .event-row .date .day, .duplicated .book .event-row .date .month {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.duplicated .book .event-row .date .day {
+  font-size: 48px;
+  font-family: "Proxima Nova Rg";
+  font-weight: bold;
+  z-index: 10;
+}
+.duplicated .book .event-row .date .month {
+  font-family: "Proxima Nova Lt";
+  letter-spacing: 2px;
+  z-index: 10;
+  font-size: 10px;
+}
+.duplicated .book .event-row .date::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url("../assets/icons/calendar.svg");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.duplicated .book .event-row .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.duplicated .book .event-row .text .category, .duplicated .book .event-row .text .event {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+  color: #424143;
+}
+.duplicated .book .event-row .text .category {
+  font-family: "Proxima Nova Lt";
+  color: #424143;
+}
+
+.testimonials {
+  padding: 64px 0;
+  background-color: #F7931D;
+}
+.testimonials .text {
+  position: relative;
+}
+.testimonials .text::before {
+  content: " ";
+  width: 128px;
+  height: 128px;
+  background-image: url("../assets/icons/left-quote.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.testimonials .text::after {
+  content: " ";
+  width: 128px;
+  height: 128px;
+  background-image: url("../assets/icons/right-quote.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.testimonials .text p {
+  z-index: 10;
+  position: relative;
+  width: 64%;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #1e1e1e;
+}
+.testimonials .author {
+  margin-top: 32px;
+}
+.testimonials .author .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonials .author .description .name, .testimonials .author .description .job {
+  text-transform: uppercase;
+  margin: 0;
+  color: #1e1e1e;
+}
+.testimonials .author .description .name {
+  font-weight: bold;
+}
+.testimonials .author .description .job {
+  font-family: "Proxima Nova Lt";
+}
+.testimonials .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .slick-slide {
+  height: 320px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation-name: expand;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

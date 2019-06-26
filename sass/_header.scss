@@ -34,6 +34,9 @@
             }
         }
         .phone {
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
             .link {
                 color: #fff;
                 transition: all .1s ease;
@@ -139,7 +142,7 @@
         color: #fff !important;
         text-transform: uppercase;
         position: relative;
-        padding: 20px 16px;
+        padding: 20px 26px;
         background-color: $red;
         transition: all .1s ease;
         i {

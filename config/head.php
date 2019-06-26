@@ -3,4 +3,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="assets/fonteawesome/css/all.css">
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 <link rel="stylesheet" href="css/main.css">

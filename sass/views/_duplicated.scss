@@ -1,0 +1,119 @@
+.duplicated {
+    padding: 32px 0;
+
+    .autonews {
+        .head {
+            position: relative;
+            .read-more {
+                background-color: $red;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 8px 16px;
+                display: inline;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+                &:hover {
+                    text-decoration: none;
+                    background-color: $yellow;
+                    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+                }
+            }
+        }
+        .edition, .edition-number {
+            text-transform: uppercase;
+            color: $red;
+            font-family: $default-lt;
+            margin: 0;
+        }
+        .edition-number {
+            font-family: $default-bl;
+        }
+        .description {
+            font-family: $default-lt;
+            font-size: 20px;
+        }
+    }
+
+    .book {
+        .head {
+            position: relative;
+            .read-more {
+                background-color: $red;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 8px 16px;
+                display: inline;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+                &:hover {
+                    text-decoration: none;
+                    background-color: $yellow;
+                    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+                }
+            }
+        }
+        .event-row {
+            position: relative;
+            height: 80px;
+            box-shadow: 0 0 16px rgba($color: #000000, $alpha: 0.1);
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            .date {
+                background-color: $red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                .day, .month {
+                    margin: 0;
+                    color: #fff;
+                    text-transform: uppercase;
+                    line-height: 1;
+                }
+                .day {
+                    font-size: 48px;
+                    font-family: $default-rg;
+                    font-weight: bold;
+                    z-index: 10;
+                }
+                .month {
+                    font-family: $default-lt;
+                    letter-spacing: 2px;
+                    z-index: 10;
+                    font-size: 10px;
+                }
+                &::after {
+                    content: "";
+                    width: 48px;
+                    height: 48px;
+                    background-image: url('../assets/icons/calendar.svg');
+                    position: absolute;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: 0;
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .category, .event {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-weight: bold;
+                    color: $grey;
+                }
+                .category {
+                    font-family: $default-lt;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}

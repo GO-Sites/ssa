@@ -1,0 +1,29 @@
+.footer {
+    padding: 64px;
+    background-color: $grey;
+    .section-title {
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .social {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        &-item {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+            &-link {
+                color: $grey;
+                font-size: 20px;
+            }
+        }
+    }
+}

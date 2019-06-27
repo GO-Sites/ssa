@@ -147,6 +147,36 @@
   background-color: #860D11;
 }
 
+.footer {
+  padding: 64px;
+  background-color: #424143;
+}
+.footer .section-title {
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer .social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.footer .social-item {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer .social-item:not(:last-child) {
+  margin-right: 12px;
+}
+.footer .social-item-link {
+  color: #424143;
+  font-size: 20px;
+}
+
 body, html {
   scroll-behavior: smooth;
 }
@@ -414,7 +444,7 @@ body {
 }
 
 .duplicated {
-  padding: 32px 0;
+  padding: 64px 0;
 }
 .duplicated .autonews .head {
   position: relative;
@@ -528,7 +558,7 @@ body {
 }
 
 .testimonials {
-  padding: 64px 0;
+  padding: 32px 0;
   background-color: #F7931D;
 }
 .testimonials .text {
@@ -624,6 +654,25 @@ body {
   100% {
     transform: scale(1);
   }
+}
+.app {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.app .phrase {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #424143;
+}
+.app .phrase b {
+  color: #CA151C;
+}
+.app .text {
+  text-transform: uppercase;
+  color: #424143;
+  font-size: 20px;
+  font-family: "Proxima Nova Lt";
 }
 
 /*# sourceMappingURL=main.css.map */

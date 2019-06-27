@@ -5,5 +5,6 @@
 <?php include 'views/news.php'; ?>
 <?php include 'views/duplicated.php'; ?>
 <?php include 'views/testimonials.php'; ?>
+<?php include 'views/app.php'; ?>
     
 <?php include 'footer.php'; ?>

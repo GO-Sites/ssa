@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('.testimonials-slider').slick({
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         infinite: true,
         dots: true,
         nextArrow: false,

@@ -1,0 +1,20 @@
+.app {
+    // padding-top: 32px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .phrase {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $grey;
+        b {
+            color: $red;
+        }
+    }
+    .text {
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 20px;
+        font-family: $default-lt;
+    }
+}

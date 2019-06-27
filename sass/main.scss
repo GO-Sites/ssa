@@ -1,6 +1,7 @@
-@import '_variables';
+@import 'variables';
 
-@import '_header';
+@import 'header';
+@import 'footer';
 
 body, html {
     scroll-behavior: smooth;
@@ -46,3 +47,5 @@ body {
 @import 'views/duplicated';
 
 @import 'views/testimonials';
+
+@import 'views/app';

@@ -1,7 +1,9 @@
 @import 'variables';
+@import 'mixins';
 
 @import 'header';
 @import 'footer';
+@import 'cursos';
 
 body, html {
     scroll-behavior: smooth;

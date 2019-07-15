@@ -1,4 +1,4 @@
-<div class="col-md-6 pr-0 book">
+<div class="col-md-6 book">
     <div class="head">
         <h1 class="title">Agenda</h1>
         <a href="#0" class="read-more">Veja mais <i class="fas fa-plus"></i></a>

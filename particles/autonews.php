@@ -1,4 +1,4 @@
-<div class="col-md-6 pl-0 autonews">
+<div class="col-md-6 autonews">
     <div class="head">
         <h1 class="title">Autonews</h1>
         <a href="#0" class="read-more">Veja mais <i class="fas fa-plus"></i></a>

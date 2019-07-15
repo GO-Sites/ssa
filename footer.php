@@ -1,6 +1,6 @@
     <footer class="footer">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center row-links">
                 <div class="col-md-3">
                     <img src="assets/img/logo-white.png" alt="" class="img-fluid">
                 </div>
@@ -29,7 +29,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h5 class="section-title">Baixe nosso aplicativo</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/app-store.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/download_on_google_play.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <small class="copy">Copyright © 2019 Sistema Sincopeças Assopeças Assomotos - SSA. Todos os direitos reservados.<br>Rua Antenor Frota Wanderley, 535 - Benfica - Fortaleza/CE CEP: 60.020-350 – Fone: 85 3206.6191</small>
+                </div>
             </div>
         </div>
     </footer>

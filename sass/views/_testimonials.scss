@@ -12,9 +12,13 @@
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
             z-index: 1;
+            @include mobile {
+                width: 64px;
+                height: 64px;
+            }
         }
         &::after {
             content: " ";
@@ -25,9 +29,13 @@
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
-            top: 0;
+            bottom: 0;
             right: 0;
             z-index: 1;
+            @include mobile {
+                width: 64px;
+                height: 64px;
+            }
         }
         p {
             z-index: 10;
@@ -38,6 +46,10 @@
             display: block;
             margin: 0 auto;
             color: $dark-grey;
+            @include mobile {
+                font-size: 16px;
+                width: 100%;
+            }
         }
     }
     .author {

@@ -1,10 +1,10 @@
 <section class="news">
     <div class="container">
         <div class="row">
-            <div class="col-12 p-0">
+            <div class="col-12">
                 <h1 class="title">Notícias</h1>
             </div>
-            <div class="col-md-6 p-0">
+            <div class="col-md-6">
                 <div class="card">
                     <img src="assets/img/sample.jpg" class="card-img-top" alt="News thumb">
                     <div class="card-body">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pr-0 d-none d-sm-none d-md-block">
+            <div class="col-md-6 d-none d-sm-none d-md-block">
                 <div class="card card-horizontal mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4 card-img">

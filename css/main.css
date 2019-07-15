@@ -151,6 +151,11 @@
   padding: 64px;
   background-color: #424143;
 }
+.footer .row-links {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2%;
+  margin-bottom: 4px;
+}
 .footer .section-title {
   text-transform: uppercase;
   color: #fff;
@@ -175,6 +180,19 @@
 .footer .social-item-link {
   color: #424143;
   font-size: 20px;
+}
+.footer .copy {
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  display: block;
+}
+
+.course-header {
+  padding-top: 128px;
+  padding-bottom: 16px;
+  background-color: #860D11;
+  color: #fff;
 }
 
 body, html {
@@ -573,9 +591,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .testimonials .text::before {
+    width: 64px;
+    height: 64px;
+  }
 }
 .testimonials .text::after {
   content: " ";
@@ -586,9 +610,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .testimonials .text::after {
+    width: 64px;
+    height: 64px;
+  }
 }
 .testimonials .text p {
   z-index: 10;
@@ -599,6 +629,12 @@ body {
   display: block;
   margin: 0 auto;
   color: #1e1e1e;
+}
+@media screen and (max-width: 767px) {
+  .testimonials .text p {
+    font-size: 16px;
+    width: 100%;
+  }
 }
 .testimonials .author {
   margin-top: 32px;

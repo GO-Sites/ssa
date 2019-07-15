@@ -8,10 +8,10 @@
                     </div>
                     <div class="col-4 author">
                         <div class="row justify-content-center">
-                            <div class="col-md-4 col-sm-6 profile">
+                            <div class="col-md-4 col-sm-6 col-xs-6 profile">
                                 <img src="assets/img/lady-with-glasses-smiling.jpg" alt="" class="img-fluid rounded-circle">
                             </div>
-                            <div class="col-md-8 col-sm-6 description">
+                            <div class="col-md-8 col-sm-6 col-xs-6 description">
                                 <h6 class="name">Mary Jane Holland</h6>
                                 <small class="job">Engenheira Ambiental</small>
                             </div>

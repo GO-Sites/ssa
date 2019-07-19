@@ -4,6 +4,19 @@
         padding-bottom: 16px;
         background-color: $wine;
         color: #fff;
-
+    }
+    &-data {
+        position: relative;
+        .card {
+            position: absolute;
+            border: none;
+            box-shadow: 0 0 16px rgba($color: #000000, $alpha: 0.3);
+            @include mobile {
+                position: relative;
+            }
+        }
+    }
+    &-body {
+        padding: 32px 0;
     }
 }

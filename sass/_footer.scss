@@ -10,10 +10,20 @@
         text-transform: uppercase;
         color: #fff;
     }
+    .social-media-box {
+        @include mobile {
+            margin: 32px 0;
+            text-align: center;
+        }
+    }
     .social {
         display: flex;
         padding: 0;
         list-style: none;
+        @include mobile {
+            margin-bottom: 0;
+            justify-content: center;
+        }
         &-item {
             width: 40px;
             height: 40px;

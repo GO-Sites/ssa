@@ -40,6 +40,9 @@
             .link {
                 color: #fff;
                 transition: all .1s ease;
+                @include mobile {
+                    font-size: 14px;
+                }
                 &:hover {
                     color: #bbb;
                     text-decoration: none;
@@ -61,9 +64,16 @@
         justify-content: space-between;
         position: relative;
         width: 100%;
+        @include mobile {
+            flex-direction: column;
+        }
 
         .brand-img {
             width: 20%;
+            @include mobile {
+                width: auto;
+                margin: 16px 0;
+            }
         }
 
         .associados {
@@ -71,6 +81,11 @@
             padding: 0;
             margin: 0;
             list-style: none;
+            @include mobile {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
             .associado-link {
                 text-align: center;
                 color: #fff;
@@ -84,6 +99,10 @@
                 font-family: $default-lt;
                 line-height: 1;
                 transition: all .1s ease;
+                @include mobile {
+                    width: 50%;
+                    height: 96px;
+                }
                 i {
                     font-size: 18px;
                     margin-bottom: 8px;
@@ -109,6 +128,19 @@
     background-color: $grey;
     position: relative;
     padding: 0;
+    @include mobile {
+        padding: 16px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+        padding: 8px 16px;
+        i {
+            margin-left: 8px;
+        }
+    }
+
     .nav-link {
         font-family: $default-lt;
         color: #fff !important;
@@ -136,6 +168,9 @@
                 left: 0;
             }
         }
+        @include mobile {
+            padding-bottom: 8px;
+        }
     } 
     .ouvidoria {
         font-family: $default-lt;
@@ -145,6 +180,11 @@
         padding: 20px 26px;
         background-color: $red;
         transition: all .1s ease;
+        @include mobile {
+            padding: 0;
+            height: 32px;
+        }
+
         i {
             margin-right: 8px;
         }

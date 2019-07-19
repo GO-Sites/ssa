@@ -5,7 +5,7 @@
     position: relative;
     .phrase {
         text-transform: uppercase;
-        font-weight: bold;
+        font-family: $default-bd;
         color: $grey;
         b {
             color: $red;

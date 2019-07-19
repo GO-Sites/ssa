@@ -78,7 +78,7 @@
                 .day {
                     font-size: 48px;
                     font-family: $default-rg;
-                    font-weight: bold;
+                    font-family: $default-bd;
                     z-index: 10;
                 }
                 .month {
@@ -105,7 +105,7 @@
                 .category, .event {
                     text-transform: uppercase;
                     margin: 0;
-                    font-weight: bold;
+                    font-family: $default-bd;
                     color: $grey;
                 }
                 .category {

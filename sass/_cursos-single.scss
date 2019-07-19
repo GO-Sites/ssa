@@ -1,0 +1,113 @@
+.course {
+    .mb16 {
+        margin-bottom: 16px;
+    }
+    .main-subsection-title {
+        border-left: 2px solid $red;
+        padding-left: 8px;
+        color: $grey;
+    }
+    &-header {
+        padding-top: 128px;
+        padding-bottom: 16px;
+        background-color: $mid-red;
+        @include mobile {
+            padding: 32px 0;
+        }
+    }
+    &-name {
+        font-family: $default-bd;
+        color: #fff;
+    }
+    &-info {
+        font-family: $default-th;
+        color: #fff;
+        text-transform: uppercase;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+    &-data {
+        position: relative;
+        .card {
+            position: absolute;
+            border: none;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+            border-radius: 0;
+            .price {
+                margin-bottom: 8px;
+                .ssa-price, .general-price {
+                    color: $red;
+                    text-transform: uppercase;
+                    font-family: $default-bd;
+                    margin-bottom: -8px;
+                    line-height: 1;
+                }
+                .ssa-price-legend, .general-price-legend {
+                    color: #aaa;
+                    text-transform: uppercase;
+                    font-family: $default-lt;
+                    margin-bottom: 0;
+                    line-height: 1;
+                }
+                .general-price {
+                    color: $grey;
+                }
+            }
+            .ps {
+                margin-bottom: 8px;
+                color: #aaa;
+                font-style: italic;
+                font-family: $default-lt;
+                line-height: 1;
+                font-size: 12px;
+                display: block;
+            }
+            .btn-send {
+                border-radius: 0;
+                width: 100%;
+                margin-top: 8px;
+                background-color: $red;
+                border: none;
+                text-transform: uppercase;
+                font-family: $default-sm;
+            }
+            .card-img-top {
+                border-radius: 0;
+            }
+            @include mobile {
+                position: relative;
+                margin-top: 8px;
+            }
+        }
+    }
+    &-body {
+        padding: 40px 0;
+        .instrutor-name {
+            margin-top: 8px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            text-align: center;
+            font-family: $default-lt;
+        }
+        .instrutor-job {
+            text-align: center;
+            font-family: $default-lt;
+        }
+        .subsection-title {
+            font-family: $default-bd;
+            text-transform: uppercase;
+            color: $grey;
+            @include mobile {
+                margin-top: 8px;
+            }
+        }
+    }
+    &-title {
+        text-transform: uppercase;
+        font-family: $default-bd;
+    }
+    .subsection-text, .content {
+        font-family: $default-lt;
+    }
+}

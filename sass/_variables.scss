@@ -1,13 +1,18 @@
-@import url('../assets/fonts/proxima-nova/stylesheet.css');
+@import url('../assets/fonts/proxima-nova/style.css');
 
 //Colors
 $grey: #424143;
 $dark-grey: #1e1e1e;
 $red: #CA151C;
+$mid-red: #9D0B10;
 $wine: #860D11;
 $yellow: #F7931D;
 
 //Font
-$default-lt: 'Proxima Nova Lt';
-$default-rg: 'Proxima Nova Rg';
-$default-bl: 'Proxima Nova Bl';
+$default-th: 'Proxima Nova Thin';
+$default-lt: 'Proxima Nova Light';
+$default-rg: 'Proxima Nova Regular';
+$default-sm: 'Proxima Nova Semibold';
+$default-bd: 'Proxima Nova Bold';
+$default-eb: 'Proxima Nova Extrabold';
+$default-bl: 'Proxima Nova Black';

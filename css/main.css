@@ -1,4 +1,4 @@
-@import url("../assets/fonts/proxima-nova/stylesheet.css");
+@import url("../assets/fonts/proxima-nova/style.css");
 .top-contact {
   width: 100%;
   height: auto;
@@ -41,6 +41,11 @@
   color: #fff;
   transition: all 0.1s ease;
 }
+@media screen and (max-width: 767px) {
+  .top-contact .contacts .phone .link {
+    font-size: 14px;
+  }
+}
 .top-contact .contacts .phone .link:hover {
   color: #bbb;
   text-decoration: none;
@@ -59,14 +64,31 @@
   position: relative;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .brand-area .bar {
+    flex-direction: column;
+  }
+}
 .brand-area .bar .brand-img {
   width: 20%;
+}
+@media screen and (max-width: 767px) {
+  .brand-area .bar .brand-img {
+    width: auto;
+    margin: 16px 0;
+  }
 }
 .brand-area .bar .associados {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .brand-area .bar .associados {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 .brand-area .bar .associados .associado-link {
   text-align: center;
@@ -78,9 +100,15 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   line-height: 1;
   transition: all 0.1s ease;
+}
+@media screen and (max-width: 767px) {
+  .brand-area .bar .associados .associado-link {
+    width: 50%;
+    height: 96px;
+  }
 }
 .brand-area .bar .associados .associado-link i {
   font-size: 18px;
@@ -104,8 +132,21 @@
   position: relative;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 16px;
+  }
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+  padding: 8px 16px;
+}
+.navbar .navbar-toggler i {
+  margin-left: 8px;
+}
 .navbar .nav-link {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   color: #fff !important;
   text-transform: uppercase;
   position: relative;
@@ -130,14 +171,25 @@
   bottom: 0;
   left: 0;
 }
+@media screen and (max-width: 767px) {
+  .navbar .nav-link {
+    padding-bottom: 8px;
+  }
+}
 .navbar .ouvidoria {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   color: #fff !important;
   text-transform: uppercase;
   position: relative;
   padding: 20px 26px;
   background-color: #CA151C;
   transition: all 0.1s ease;
+}
+@media screen and (max-width: 767px) {
+  .navbar .ouvidoria {
+    padding: 0;
+    height: 32px;
+  }
 }
 .navbar .ouvidoria i {
   margin-right: 8px;
@@ -160,10 +212,22 @@
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .footer .social-media-box {
+    margin: 32px 0;
+    text-align: center;
+  }
+}
 .footer .social {
   display: flex;
   padding: 0;
   list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .footer .social {
+    margin-bottom: 0;
+    justify-content: center;
+  }
 }
 .footer .social-item {
   width: 40px;
@@ -188,11 +252,35 @@
   display: block;
 }
 
+.course .mb16 {
+  margin-bottom: 16px;
+}
+.course .main-subsection-title {
+  border-left: 2px solid #CA151C;
+  padding-left: 8px;
+  color: #424143;
+}
 .course-header {
   padding-top: 128px;
   padding-bottom: 16px;
-  background-color: #860D11;
+  background-color: #9D0B10;
+}
+@media screen and (max-width: 767px) {
+  .course-header {
+    padding: 32px 0;
+  }
+}
+.course-name {
+  font-family: "Proxima Nova Bold";
   color: #fff;
+}
+.course-info {
+  font-family: "Proxima Nova Thin";
+  color: #fff;
+  text-transform: uppercase;
+}
+.course-info:not(:last-child) {
+  margin-right: 8px;
 }
 .course-data {
   position: relative;
@@ -200,15 +288,86 @@
 .course-data .card {
   position: absolute;
   border: none;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+.course-data .card .price {
+  margin-bottom: 8px;
+}
+.course-data .card .price .ssa-price, .course-data .card .price .general-price {
+  color: #CA151C;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Bold";
+  margin-bottom: -8px;
+  line-height: 1;
+}
+.course-data .card .price .ssa-price-legend, .course-data .card .price .general-price-legend {
+  color: #aaa;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Light";
+  margin-bottom: 0;
+  line-height: 1;
+}
+.course-data .card .price .general-price {
+  color: #424143;
+}
+.course-data .card .ps {
+  margin-bottom: 8px;
+  color: #aaa;
+  font-style: italic;
+  font-family: "Proxima Nova Light";
+  line-height: 1;
+  font-size: 12px;
+  display: block;
+}
+.course-data .card .btn-send {
+  border-radius: 0;
+  width: 100%;
+  margin-top: 8px;
+  background-color: #CA151C;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold";
+}
+.course-data .card .card-img-top {
+  border-radius: 0;
 }
 @media screen and (max-width: 767px) {
   .course-data .card {
     position: relative;
+    margin-top: 8px;
   }
 }
 .course-body {
-  padding: 32px 0;
+  padding: 40px 0;
+}
+.course-body .instrutor-name {
+  margin-top: 8px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Proxima Nova Light";
+}
+.course-body .instrutor-job {
+  text-align: center;
+  font-family: "Proxima Nova Light";
+}
+.course-body .subsection-title {
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  color: #424143;
+}
+@media screen and (max-width: 767px) {
+  .course-body .subsection-title {
+    margin-top: 8px;
+  }
+}
+.course-title {
+  text-transform: uppercase;
+  font-family: "Proxima Nova Bold";
+}
+.course .subsection-text, .course .content {
+  font-family: "Proxima Nova Light";
 }
 
 body, html {
@@ -216,7 +375,7 @@ body, html {
 }
 
 body {
-  font-family: "Proxima Nova Rg";
+  font-family: "Proxima Nova Regular";
 }
 
 .container-ps {
@@ -228,7 +387,7 @@ body {
 .title {
   text-transform: uppercase;
   color: #424143;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   position: relative;
   margin-bottom: 16px;
 }
@@ -301,7 +460,7 @@ body {
 .fast-access-title {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
 }
 
 .school {
@@ -331,7 +490,7 @@ body {
 .school h5 {
   color: #1e1e1e;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Proxima Nova Bold";
 }
 .school-areas {
   padding: 0;
@@ -345,7 +504,7 @@ body {
 .school-areas-link-item {
   padding: 4px 16px;
   text-transform: uppercase;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   font-size: 18px;
   margin: 4px 0;
   width: 100%;
@@ -443,7 +602,7 @@ body {
 }
 .news .card-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Proxima Nova Bold";
 }
 .news .card-text {
   font-size: 18px;
@@ -502,14 +661,14 @@ body {
 .duplicated .autonews .edition, .duplicated .autonews .edition-number {
   text-transform: uppercase;
   color: #CA151C;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   margin: 0;
 }
 .duplicated .autonews .edition-number {
-  font-family: "Proxima Nova Bl";
+  font-family: "Proxima Nova Black";
 }
 .duplicated .autonews .description {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   font-size: 20px;
 }
 .duplicated .book .head {
@@ -555,12 +714,12 @@ body {
 }
 .duplicated .book .event-row .date .day {
   font-size: 48px;
-  font-family: "Proxima Nova Rg";
-  font-weight: bold;
+  font-family: "Proxima Nova Regular";
+  font-family: "Proxima Nova Bold";
   z-index: 10;
 }
 .duplicated .book .event-row .date .month {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   letter-spacing: 2px;
   z-index: 10;
   font-size: 10px;
@@ -583,11 +742,11 @@ body {
 .duplicated .book .event-row .text .category, .duplicated .book .event-row .text .event {
   text-transform: uppercase;
   margin: 0;
-  font-weight: bold;
+  font-family: "Proxima Nova Bold";
   color: #424143;
 }
 .duplicated .book .event-row .text .category {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
   color: #424143;
 }
 
@@ -666,10 +825,10 @@ body {
   color: #1e1e1e;
 }
 .testimonials .author .description .name {
-  font-weight: bold;
+  font-family: "Proxima Nova Bold";
 }
 .testimonials .author .description .job {
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
 }
 .testimonials .slide {
   display: flex;
@@ -714,7 +873,7 @@ body {
 }
 .app .phrase {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "Proxima Nova Bold";
   color: #424143;
 }
 .app .phrase b {
@@ -724,7 +883,7 @@ body {
   text-transform: uppercase;
   color: #424143;
   font-size: 20px;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Light";
 }
 
 /*# sourceMappingURL=main.css.map */
